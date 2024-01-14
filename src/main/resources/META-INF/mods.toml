@@ -1,10 +1,10 @@
 modLoader="javafml"
 loaderVersion="[47,)"
-license="MIT"
+license="Academic Free License v3.0"
 
 [[mods]]
 modId="primogemcraft"
-version="2350"
+version="2402"
 displayName="原石工艺"
 displayURL="https://www.mcmod.cn/class/10429.html"
 logoFile="logo.png"
@@ -18,3 +18,7 @@ description="一个暂时啥也不是的mod"
     versionRange="[1.20.1]"
     ordering="NONE"
     side="BOTH"
+
+
+
+
