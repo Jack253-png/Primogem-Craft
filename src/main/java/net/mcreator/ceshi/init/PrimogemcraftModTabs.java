@@ -23,7 +23,7 @@ public class PrimogemcraftModTabs {
 	public static final DeferredRegister<CreativeModeTab> REGISTRY = DeferredRegister.create(Registries.CREATIVE_MODE_TAB, PrimogemcraftMod.MODID);
 	public static final RegistryObject<CreativeModeTab> ZHENGHUO = REGISTRY.register("zhenghuo",
 			() -> CreativeModeTab.builder().title(Component.translatable("item_group.primogemcraft.zhenghuo")).icon(() -> new ItemStack(PrimogemcraftModItems.YUANSHI.get())).displayItems((parameters, tabData) -> {
-				tabData.accept(PrimogemcraftModItems.BUSHIZIDANHE.get());
+				tabData.accept(PrimogemcraftModItems.MINGWEI_YIQIEDEKAISHI.get());
 				tabData.accept(PrimogemcraftModItems.YUANSHI.get());
 				tabData.accept(PrimogemcraftModItems.XIXIANGYUZHIYUAN.get());
 				tabData.accept(PrimogemcraftModItems.JIJIUCHANZHIYUAN.get());
@@ -173,6 +173,7 @@ public class PrimogemcraftModTabs {
 				tabData.accept(PrimogemcraftModItems.CAOYUANHESHENGWU_SPAWN_EGG.get());
 				tabData.accept(PrimogemcraftModItems.XIAODENG_SPAWN_EGG.get());
 				tabData.accept(PrimogemcraftModItems.XIAOHEITA_SPAWN_EGG.get());
+				tabData.accept(PrimogemcraftModItems.MLJNB.get());
 			})
 
 					.build());

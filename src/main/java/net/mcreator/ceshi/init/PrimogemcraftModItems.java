@@ -200,6 +200,7 @@ import net.mcreator.ceshi.item.MmolagaoItem;
 import net.mcreator.ceshi.item.MmolafuItem;
 import net.mcreator.ceshi.item.MmolachanItem;
 import net.mcreator.ceshi.item.Mmola01Item;
+import net.mcreator.ceshi.item.MljnbItem;
 import net.mcreator.ceshi.item.MengyingItem;
 import net.mcreator.ceshi.item.MeiyouzhushidaimaItem;
 import net.mcreator.ceshi.item.MaoxianjiazhinangItem;
@@ -320,7 +321,7 @@ import net.mcreator.ceshi.PrimogemcraftMod;
 @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
 public class PrimogemcraftModItems {
 	public static final DeferredRegister<Item> REGISTRY = DeferredRegister.create(ForgeRegistries.ITEMS, PrimogemcraftMod.MODID);
-	public static final RegistryObject<Item> BUSHIZIDANHE = REGISTRY.register("bushizidanhe", () -> new BushizidanheItem());
+	public static final RegistryObject<Item> MINGWEI_YIQIEDEKAISHI = REGISTRY.register("mingwei_yiqiedekaishi", () -> new BushizidanheItem());
 	public static final RegistryObject<Item> YUANSHI = REGISTRY.register("yuanshi", () -> new YuanshiItem());
 	public static final RegistryObject<Item> XIXIANGYUZHIYUAN = REGISTRY.register("xixiangyuzhiyuan", () -> new XixiangyuzhiyuanItem());
 	public static final RegistryObject<Item> JIJIUCHANZHIYUAN = REGISTRY.register("jijiuchanzhiyuan", () -> new JijiuchanzhiyuanItem());
@@ -798,6 +799,7 @@ public class PrimogemcraftModItems {
 	public static final RegistryObject<Item> QQIWUZHANLIPINSHITI_SPAWN_EGG = REGISTRY.register("qqiwuzhanlipinshiti_spawn_egg", () -> new ForgeSpawnEggItem(PrimogemcraftModEntities.QQIWUZHANLIPINSHITI, -1, -1, new Item.Properties()));
 	public static final RegistryObject<Item> BAIGUANGGUODUSHENGWU_SPAWN_EGG = REGISTRY.register("baiguangguodushengwu_spawn_egg", () -> new ForgeSpawnEggItem(PrimogemcraftModEntities.BAIGUANGGUODUSHENGWU, -1, -1, new Item.Properties()));
 	public static final RegistryObject<Item> KAIFAQIANGZHI_01 = REGISTRY.register("kaifaqiangzhi_01", () -> new Kaifaqiangzhi01Item());
+	public static final RegistryObject<Item> MLJNB = REGISTRY.register("mljnb", () -> new MljnbItem());
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties()));
